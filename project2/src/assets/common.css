@@ -1,0 +1,69 @@
+@charset "utf-8"; 
+
+*{ box-sizing:border-box; }
+html { overflow-y:scroll; overflow-x:hidden; margin:0; padding:0; border:0; -webkit-text-size-adjust:none; }
+body { min-width:320px; margin:0; padding:0; font-size:16px; font-family:'Pretendard',Sans-serif; position:relative; }
+div,span,object,iframe,p,
+blockquote,pre,abbr,cite,code,del,dfn,img,h1, h2, h3, h4, h5, h6,html,body,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,
+menu,nav,section,summary,time,mark,audio,video{ margin:0; padding:0; outline:0; line-height:160%; font-family:'Pretendard',Sans-serif; }
+strong,b{ font-weight:500; }
+h1, h2, h3, h4, h5, h6 { font-weight:500; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ol, ul, li {list-style:none}
+li{ list-style-type:none; }
+caption, legend { position:absolute; margin:0; padding:0; font-size:0; line-height:0; text-indent:-9999em; overflow:hidden; }
+label, input, button, select, img { vertical-align:middle; }
+input, button{ margin:0; padding:0; font-family:'Pretendard',Sans-serif; font-size:16px; font-weight:400; }
+input, textarea{ margin:0; padding:0 15px; background:#fff; }
+select{ margin:0; padding-left:5px; background:#fff; }
+input, textarea, select, a, button{ outline:none; }
+input, select{ height:36px; line-height:36px; font-size:14px; color:#555; border:1px solid #ddd; }
+input[type=checkbox], input[type=radio]{ padding:0; border:none; margin-right:5px; height:auto; line-height:auto; }
+button{ cursor:pointer; }
+button,input[type=submit]{ margin:0; vertical-align:top; cursor:pointer; }
+textarea { min-height:43px; border:solid 1px #ddd; margin:5px auto 5px; background:#fff; }
+textarea, select { margin:0; font-family:'Pretendard',Sans-serif; font-size:14px; font-weight:400; }
+p { margin:0; padding:0; word-break:keep-all; font-family:'Pretendard',Sans-serif; font-size:15px; line-height:25px; font-weight:400; color:#444; }
+hr { display:none; }
+a{ text-decoration:none; color:#222; }
+a{ -webkit-transition-duration:0.2s; -moz-transition-duration:0.2s; -o-transition-duration:0.2s; -ms-transition-duration:0.2s; transition-duration:0.2s; }
+a:link, a:visited { text-decoration:none; }
+a:hover, a:focus, a:active { color:#000; text-decoration:underline; }
+a:hover, a:active, a:focus{ text-decoration:none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+img,fieldset,iframe{ border:0; vertical-align:top; }
+img,fieldset { border:none; }
+table{ width:100%; margin:0px auto; border-collapse:collapse; border-spacing:0; vertical-align:top; }
+label{ cursor:pointer; }
+label:hover{ color:#f36910; }
+label input[type=checkbox]{ vertical-align:middle; }
+i{ font-style:normal; }
+
+.font_orange { color : #f36910; }
+
+
+@media(max-width:1023px){
+
+html { overflow-x:scroll; }
+/* body{ font-size:13px; }
+p{ font-size:14px; line-height:23px; }
+input, button{ font-size:13px; }
+textarea, select{ font-size:13px; } */
+
+}
+
+/* div#layout_config_full > div > img { width:auto; max-width:100%; }
+
+div#layout_config_full > p > img { width:auto; max-width:100%; }
+
+div#layout_config_full > img { width:auto; max-width:100%; } */
+
+
+div#layout_config_full > div > img { width:100% !important; }
+
+div#layout_config_full > p > img { width:100% !important; }
+
+div#layout_config_full > img { width:100% !important; }

@@ -4,7 +4,7 @@
     <div class="nav_bar_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">JO_C Blog</a>
+          <a class="navbar-brand" href="#" @click="$router.push('/')">JO_C Blog</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -13,7 +13,7 @@
               <router-link to="/"><a class="nav-link active" aria-current="page" href="#">Home</a></router-link>
               <router-link to="/about"><a class="nav-link" href="#">About</a></router-link>
               <router-link to="/list"><a class="nav-link" href="#">News</a></router-link>
-              <router-link to="/deatil"><a class="nav-link" href="#">Contact Me</a></router-link>
+              <router-link to="/contact"><a class="nav-link" href="#">Contact Me</a></router-link>
             </div>
           </div>
         </div>

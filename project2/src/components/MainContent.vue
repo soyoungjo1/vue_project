@@ -3,7 +3,7 @@
     <h3 class="today_count">TODAY : {{ today }}</h3>
 
     <!-- 슬라이드 구현-->
-    <div class="content_slide">
+    <div class="content_slide" data-aos="fade-up" data-aos-duration="1500">
         <carousel :items-to-show="1">
           <slide v-for="(slide, i) in slidetxt" :key="i">
             <div class="slide_content">
@@ -27,8 +27,8 @@
     </div>
     <!-- //슬라이드 구현-->
 
-    <div class="content_about">
-      <ul>
+    <div class="content_about" data-aos="fade-up" data-aos-duration="1500">
+      <ul @click="$router.push('/about')">
         <li>
           <p>Front-End Developer</p>
           <h3>About Me</h3>
@@ -37,12 +37,12 @@
       </ul>
     </div>
 
-    <div class="content_sub">
+    <div class="content_sub" data-aos="fade-up" data-aos-duration="1500">
       <ul>
-        <li class="news">
+        <li class="news" @click="$router.push('/list')">
           <h3>News</h3>
         </li>
-        <li class="contact">
+        <li class="contact" @click="$router.push('/contact')">
           <h3>Contact Me</h3>
         </li>
       </ul>
@@ -114,7 +114,7 @@ export default {
 .carousel__pagination-button::after{background-color:rgba(255, 255,255,.5); width:5px; height:5px; border-radius: 100px;}
 .carousel__pagination{margin-top:20px;}
 
-.content_about{background:#000; margin-top:20px; border-radius:15px; padding:15px 20px;}
+.content_about{background:#000; margin-top:20px; border-radius:15px; padding:15px 20px; cursor:pointer;}
 .content_about ul{overflow:hidden; padding-left:0; display:flex; align-items: center; width:100%;}
 .content_about li{float:left; width:45%; text-align:center;}
 .content_about li:nth-child(2){width:55%;}
@@ -123,7 +123,7 @@ export default {
 .content_about li img{max-width:100%; width:auto; margin: 0 auto;}
 
 .content_sub ul{overflow:hidden; padding-left:0; margin-top:20px;}
-.content_sub li{float:left; width:48%; margin-left:4%; background:#f346d9; color:#fff; padding:60px 20px 15px; border-radius:15px; }
+.content_sub li{float:left; width:48%; margin-left:4%; background:#f346d9; color:#fff; padding:60px 20px 15px; border-radius:15px; cursor:pointer;}
 .content_sub li:first-child{margin-left:0; background:#35e956; color:#141414; }
 
 </style>

@@ -21,6 +21,7 @@ export default {
   name: "post",
   props : {
     postlist : Array,
+    step : Number,
   }
 };
 </script>

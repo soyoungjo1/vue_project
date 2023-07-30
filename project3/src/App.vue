@@ -2,7 +2,8 @@
 <div>
   <div class="header">
     <ul class="header-button-left">
-      <li>Cancel</li>
+      <li v-if="step == 1" @click="step--">Prev</li>
+      <li v-if="step == 2" @click="step-=2">Cancle</li>
     </ul>
     <ul class="header-button-right">
       <li v-if="step == 1" @click="step++">Next</li>
@@ -11,19 +12,18 @@
     <img src="./assets/logo.png" class="logo" />
   </div>
 
+  <!-- <vuex 사용법> 
   <p>{{ name }} {{ age }} {{ likes }} {{ 내이름 }} {{ 카운터 }}</p>
   <button @click="카운터++">버튼</button>
-  <!-- <vuex 사용법> 
   <h4>안녕 {{ $store.state.name }}</h4>
   <h3 >{{ $store.state.age }}</h3>
   <button @click="$store.commit('이름변경')">버튼</button>
-  <button @click="$store.commit('나이올리기', 10)">나이올리기</button> -->
-
+  <button @click="$store.commit('나이올리기', 10)">나이올리기</button> 
   <p>{{ $store.state.more }}</p>
-  <button @click="$store.dispatch('getData')">더보기더보기</button>
+  <button @click="$store.dispatch('getData')">더보기더보기</button>-->
 
   <Container :postlist="postlist" :step="step" :imgUrl="imgUrl" :selectfilter="selectfilter" @write="textbox = $event"/>
-  <button class="morebtn" @click="more">더보기 +</button>
+  <button :style="{display:`none`}" class="morebtn" @click="more">더보기 +</button>
 
   <div class="footer">
     <ul class="footer-button-plus">

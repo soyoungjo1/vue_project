@@ -18,9 +18,16 @@
     <div v-if="step == 2">
       <div :class="selectfilter + ` upload-image`" :style="`background-image:url(${imgUrl})`"></div>
       <div class="write">
-        <textarea @input="$emit('write', $event.target.value)" class="write-box">write!</textarea>
+        <textarea @input="$emit('write', $event.target.value)" class="write-box">글을 작성해보세요.</textarea>
       </div>
     </div>
+
+    <!-- 글작성페이지 -->
+    <div v-if="step == 3">
+      <MyPage/>
+    </div>
+
+     
   </div>
 </template>
 
@@ -28,6 +35,7 @@
 import Filter from '../assets/filterData.js';
 import Post from "./Post.vue";
 import FilterBox from "./Filterbox.vue";
+import MyPage from './MyPage.vue';
 
 export default {
   name: "container",
@@ -40,6 +48,7 @@ export default {
   components: {
     Post,
     FilterBox,
+    MyPage,
   },
 
   props: {

@@ -4,8 +4,10 @@
     <ul class="header-button-left">
       <li v-if="step == 1" @click="step--">Prev</li>
       <li v-if="step == 2" @click="step-=2">Cancle</li>
+      <li v-if="step == 3" @click="step-=3">Cancle</li>
     </ul>
     <ul class="header-button-right">
+      <li v-if="step == 0" @click="step+=3">follwer</li>
       <li v-if="step == 1" @click="step++">Next</li>
       <li v-if="step == 2" @click="publish">업로드</li>
     </ul>
